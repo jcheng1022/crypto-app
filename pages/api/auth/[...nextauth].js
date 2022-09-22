@@ -21,6 +21,7 @@ export const authOptions = {
   jwt: {
     encryption: true,
   },
+  secret: process.env.secret,
   callbacks: {
     async jwt(token, account) {
       if (account?.accessToken) {
