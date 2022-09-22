@@ -9,8 +9,8 @@ function News({ newsData }) {
       <div class={styles.largeContainer}>
         {newsData.news.map((ele, index) => {
           return (
-            <div className={styles.smallContainer}>
-              <h2 key={index}>
+            <div key={index} className={styles.smallContainer}>
+              <h2>
                 <a href={ele.link}> {ele.title}</a>
               </h2>
               <h3> Source {ele.source}</h3>

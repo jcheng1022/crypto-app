@@ -7,8 +7,8 @@ function Coins({ coinData }) {
       <h1> All Coins</h1>
       {coinData.coins.map((coin, index) => {
         return (
-          <div>
-            <h2 key={index}> {coin.name}</h2>
+          <div key={index}>
+            <h2> {coin.name}</h2>
             <p> {coin.price}</p>
           </div>
         );
