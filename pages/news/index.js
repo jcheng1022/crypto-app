@@ -7,11 +7,10 @@ function News({ newsData }) {
     <div className={styles.container}>
       <h1> News</h1>
       <div class={styles.largeContainer}>
-        {newsData.news.map((ele) => {
+        {newsData.news.map((ele, index) => {
           return (
             <div className={styles.smallContainer}>
-              <img src={ele.imgUrl} />
-              <h2>
+              <h2 key={index}>
                 <a href={ele.link}> {ele.title}</a>
               </h2>
               <h3> Source {ele.source}</h3>
