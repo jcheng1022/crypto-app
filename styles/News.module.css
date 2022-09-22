@@ -1,0 +1,23 @@
+.container {
+    margin: 15px;
+}
+
+.largeContainer {
+    display:flex;
+    flex-direction: column;
+}
+
+.smallContainer {
+    margin: 10px 30px;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.smallContainer:hover{
+    transform:scale(1.02);
+}
+
+.navItems {
+    margin: 20px;
+}
